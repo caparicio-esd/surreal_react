@@ -6,4 +6,4 @@ El proyecto está hecho con ViteJS, y con ReactJS. Usaremos también TailwindCSS
 Haremos finalmente un despliegue del proyecto con Netlify.
 
 ### Secciones del proyecto
-- :white_check_mark Setup de React con ViteJS
+- :white_check_mark: Setup de React con ViteJS
