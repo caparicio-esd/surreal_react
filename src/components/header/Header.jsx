@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import {
   header,
   headerContent,
@@ -12,6 +12,8 @@ import HeaderMenuItem from "./HeaderMenuItem";
 import Button from "../global/Button/Button";
 
 const Header = () => {
+  const [activeIndex, setActiveIndex] = useState(0)
+
   return (
     <header className={header} id="header">
       <div className={headerContent}>
@@ -25,8 +27,13 @@ const Header = () => {
         </div>
         <nav className={headerNav}>
           <ul className={headerMenu}>
-            {menuItems.map((menuItem) => (
-              <HeaderMenuItem key={menuItem.id} active={menuItem.active}>
+            {menuItems.map((menuItem, i) => (
+              <HeaderMenuItem
+                key={menuItem.id}
+                setActiveIndex={setActiveIndex}
+                index={i}
+                active={activeIndex == i}
+              >
                 {menuItem.label}
               </HeaderMenuItem>
             ))}
