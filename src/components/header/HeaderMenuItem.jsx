@@ -6,12 +6,12 @@ import {
 } from "./HeaderMenuItem.module.sass";
 
 const HeaderMenuItem = ({ children, ...props }) => {
-  const { active, setActiveIndex, index } = props;
+  const { active, updateActiveIndex, index } = props;
   const headerItemClasses = classNames(headerMenuItem, {
     [`${headerMenuItemActive}`]: active,
   });
   return (
-    <div onClick={() => setActiveIndex(index)} className={headerItemClasses}>
+    <div onClick={() => updateActiveIndex(index)} className={headerItemClasses}>
       {children}
     </div>
   );

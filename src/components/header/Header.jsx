@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React from "react";
 import {
   header,
   headerContent,
@@ -10,9 +10,10 @@ import {
 import { logo, menuItems, ctas } from "./../../models/header.json";
 import HeaderMenuItem from "./HeaderMenuItem";
 import Button from "../global/Button/Button";
+import useHeaderMenuItems from "./useHeaderMenuItems";
 
 const Header = () => {
-  const [activeIndex, setActiveIndex] = useState(0)
+  const [activeIndex, updateActiveIndex] = useHeaderMenuItems(menuItems);
 
   return (
     <header className={header} id="header">
@@ -30,7 +31,7 @@ const Header = () => {
             {menuItems.map((menuItem, i) => (
               <HeaderMenuItem
                 key={menuItem.id}
-                setActiveIndex={setActiveIndex}
+                updateActiveIndex={updateActiveIndex}
                 index={i}
                 active={activeIndex == i}
               >
