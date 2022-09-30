@@ -18,7 +18,7 @@ const Button = ({ children, ...props }) => {
   return (
     <button className={buttonClasses}>
       <div className={buttonHolder}>
-        {icon && <span className="icon">{<Icon height={20} />}</span>}
+        {icon && <span className="icon">{<Icon height={18} />}</span>}
         <span>{children}</span>
       </div>
     </button>

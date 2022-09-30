@@ -41,12 +41,12 @@
     {
       "label": "Star us on Github",
       "icon": "HeartIcon",
-      "type": "primary"
+      "type": "outlined"
     },
     {
       "label": "Join cloud waitlist",
       "icon": null,
-      "type": "outlined"
+      "type": "primary"
     }
   ]
 }
