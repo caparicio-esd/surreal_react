@@ -1,0 +1,14 @@
+.button
+    @apply text-sm p-px rounded-full
+    @apply bg-gradient-to-r from-purple-600 to-pink-500
+    .buttonHolder
+        @apply flex gap-2 items-center px-5 py-2 rounded-full
+        @apply overflow-hidden
+        @apply whitespace-nowrap
+
+    &.buttonPrimary
+        .buttonHolder
+            @apply bg-gradient-to-r from-purple-600 to-pink-500
+    &.buttonOutlined
+        .buttonHolder
+            @apply bg-stone-900

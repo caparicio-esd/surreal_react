@@ -1,0 +1,53 @@
+{
+  "logo": {
+    "url": "/images/logo.svg",
+    "alt": "surreal_logo",
+    "title": "surreal_logo",
+    "height": 50
+  },
+  "menuItems": [
+    {
+      "id": 0,
+      "label": "home",
+      "active": true
+    },
+    {
+      "id": 1,
+      "label": "install",
+      "active": false
+    },
+    {
+      "id": 2,
+      "label": "community",
+      "active": false
+    },
+    {
+      "id": 3,
+      "label": "product",
+      "active": false
+    },
+    {
+      "id": 4,
+      "label": "docs",
+      "active": false
+    },
+    {
+      "id": 5,
+      "label": "blog",
+      "active": false
+    }
+  ],
+  "ctas": [
+    {
+      "label": "Star us on Github",
+      "icon": "HeartIcon",
+      "type": "primary"
+    },
+    {
+      "label": "Join cloud waitlist",
+      "icon": null,
+      "type": "outlined"
+    }
+  ]
+}
+
