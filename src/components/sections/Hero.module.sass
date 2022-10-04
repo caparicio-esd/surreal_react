@@ -1,0 +1,21 @@
+.hero
+    @apply my-6
+    .heroContent
+        @apply container mx-auto flex justify-between items-center gap-6
+        .heroLeft
+            @apply flex flex-col gap-6
+            @apply lg:max-w-[60ch] xl:max-w-[70ch]
+            h1
+                font-size: 46px
+                line-height: 46px
+                font-weight: bold
+            h2
+                font-size: 24px
+                line-height: 24px
+                font-weight: bold
+            p
+                @apply text-gray-400
+        .heroPicture
+            max-width: 280px
+            img
+                width: 100%

@@ -1,7 +1,15 @@
-import { HeartIcon } from '@heroicons/react/24/outline'
+import {
+  HeartIcon,
+  CloudArrowDownIcon,
+  DocumentTextIcon,
+  ArrowRightIcon,
+} from '@heroicons/react/24/outline'
 
 const stringToIconDB = {
   HeartIcon,
+  CloudArrowDownIcon,
+  DocumentTextIcon,
+  ArrowRightIcon,
 }
 
 export const stringToIcon = (iconAsString = '') => {

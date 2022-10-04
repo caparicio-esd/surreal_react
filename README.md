@@ -9,3 +9,4 @@ Haremos finalmente un despliegue del proyecto con Netlify.
 - :white_check_mark: Setup de React con ViteJS
 - :white_check_mark: Setup de Sass y TailwindCSS
 - :white_check_mark: Header, uso de heroicons
+- :white_check_mark: Hero y alguna sección más...

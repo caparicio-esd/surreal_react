@@ -11,7 +11,7 @@ const HeaderMenuItem = ({ children, ...props }) => {
     [`${headerMenuItemActive}`]: active,
   });
   return (
-    <div onClick={() => updateActiveIndex(index)} className={headerItemClasses}>
+    <div onMouseEnter={() => updateActiveIndex(index)} className={headerItemClasses}>
       {children}
     </div>
   );
