@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useContext } from "react";
 import {
   header,
   headerContent,
@@ -7,13 +7,12 @@ import {
   headerMenu,
   headerCtas,
 } from "./Header.module.sass";
-import { logo, menuItems, ctas } from "./../../models/header.json";
 import HeaderMenuItem from "./HeaderMenuItem";
 import Button from "../global/Button/Button";
-import useHeaderMenuItems from "./useHeaderMenuItems";
+import { HeaderContext } from "../../contexts/HeaderContext";
 
 const Header = () => {
-  const [activeIndex, updateActiveIndex] = useHeaderMenuItems(menuItems);
+  const { logo, menuItems, ctas } = useContext(HeaderContext)
 
   return (
     <header className={header} id="header">
@@ -31,9 +30,8 @@ const Header = () => {
             {menuItems.map((menuItem, i) => (
               <HeaderMenuItem
                 key={menuItem.id}
-                updateActiveIndex={updateActiveIndex}
+                active={menuItem.active}
                 index={i}
-                active={activeIndex == i}
               >
                 {menuItem.label}
               </HeaderMenuItem>
