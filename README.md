@@ -5,9 +5,16 @@ El proyecto está hecho con ViteJS, y con ReactJS. Usaremos también TailwindCSS
 
 Haremos finalmente un despliegue del proyecto con Netlify.
 
+<hr>
+
 ### Secciones del proyecto
 - :white_check_mark: Setup de React con ViteJS
 - :white_check_mark: Setup de Sass y TailwindCSS
 - :white_check_mark: Header, uso de heroicons
 - :white_check_mark: Hero y alguna sección más...
 - :white_check_mark: Context api
+
+<hr>
+
+### Organizando código con buenas prácticas
+https://blog.webdevsimplified.com/2022-07/react-folder-structure/
